@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue-element | 小明的docment</title>
+    <meta name="description" content="关于小明的文档">
+    <script>
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script")
+        hm.src = "https://hm.baidu.com/hm.js?6cd2cc405ca7d5f413790a2181ed53e7"
+        var s = document.getElementsByTagName("script")[0]
+        s.parentNode.insertBefore(hm, s)
+      })()
+    </script>
+    
+    <link rel="preload" href="/assets/css/0.styles.46bcc624.css" as="style"><link rel="preload" href="/assets/js/app.d56d54d5.js" as="script"><link rel="preload" href="/assets/js/23.ed906f1e.js" as="script"><link rel="preload" href="/assets/js/5.e5b20c49.js" as="script"><link rel="prefetch" href="/assets/js/10.1a39355f.js"><link rel="prefetch" href="/assets/js/11.1e415d99.js"><link rel="prefetch" href="/assets/js/12.5e9877fa.js"><link rel="prefetch" href="/assets/js/13.51f68b80.js"><link rel="prefetch" href="/assets/js/14.f38e2984.js"><link rel="prefetch" href="/assets/js/15.61779e81.js"><link rel="prefetch" href="/assets/js/16.b0654b1c.js"><link rel="prefetch" href="/assets/js/17.e7ab0c85.js"><link rel="prefetch" href="/assets/js/18.7e238fc2.js"><link rel="prefetch" href="/assets/js/19.a9f7b991.js"><link rel="prefetch" href="/assets/js/2.0534fa10.js"><link rel="prefetch" href="/assets/js/20.3aad2be6.js"><link rel="prefetch" href="/assets/js/21.4d55085e.js"><link rel="prefetch" href="/assets/js/22.a04f2017.js"><link rel="prefetch" href="/assets/js/24.5e680890.js"><link rel="prefetch" href="/assets/js/25.23ef539a.js"><link rel="prefetch" href="/assets/js/26.1a98f261.js"><link rel="prefetch" href="/assets/js/27.4940a424.js"><link rel="prefetch" href="/assets/js/3.c3c01f9a.js"><link rel="prefetch" href="/assets/js/4.c11a2008.js"><link rel="prefetch" href="/assets/js/6.da4381e1.js"><link rel="prefetch" href="/assets/js/7.b09efff3.js"><link rel="prefetch" href="/assets/js/8.2983a641.js"><link rel="prefetch" href="/assets/js/9.4ecec881.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.46bcc624.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小明的docment</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mdRules.html" class="nav-link">md语法</a></li><li class="dropdown-item"><!----> <a href="/blog/vue-element.html" class="nav-link router-link-exact-active router-link-active">vue-elementUI</a></li><li class="dropdown-item"><!----> <a href="/blog/demo.html" class="nav-link">demo</a></li><li class="dropdown-item"><!----> <a href="/blog/echarts.html" class="nav-link">echarts</a></li><li class="dropdown-item"><!----> <a href="/blog/js基础.html" class="nav-link">js基础</a></li><li class="dropdown-item"><!----> <a href="/blog/vuessr.html" class="nav-link">vuessr</a></li><li class="dropdown-item"><!----> <a href="/blog/mini-program.html" class="nav-link">小程序的坑</a></li><li class="dropdown-item"><!----> <a href="/blog/website.html" class="nav-link">阿里云建站</a></li><li class="dropdown-item"><!----> <a href="/blog/jenkins.html" class="nav-link">jenkins搭建</a></li><li class="dropdown-item"><!----> <a href="/blog/react.html" class="nav-link">react笔记</a></li><li class="dropdown-item"><!----> <a href="/blog/angular.html" class="nav-link">angular笔记</a></li><li class="dropdown-item"><!----> <a href="/blog/h5.html" class="nav-link">H5</a></li><li class="dropdown-item"><!----> <a href="/blog/chrome.html" class="nav-link">chorme</a></li><li class="dropdown-item"><!----> <a href="/blog/mianshi.html" class="nav-link">常见冷知识</a></li><li class="dropdown-item"><!----> <a href="/blog/aa.html" class="nav-link">待整理</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="https://github.com/guangming95" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/mdRules.html" class="nav-link">md语法</a></li><li class="dropdown-item"><!----> <a href="/blog/vue-element.html" class="nav-link router-link-exact-active router-link-active">vue-elementUI</a></li><li class="dropdown-item"><!----> <a href="/blog/demo.html" class="nav-link">demo</a></li><li class="dropdown-item"><!----> <a href="/blog/echarts.html" class="nav-link">echarts</a></li><li class="dropdown-item"><!----> <a href="/blog/js基础.html" class="nav-link">js基础</a></li><li class="dropdown-item"><!----> <a href="/blog/vuessr.html" class="nav-link">vuessr</a></li><li class="dropdown-item"><!----> <a href="/blog/mini-program.html" class="nav-link">小程序的坑</a></li><li class="dropdown-item"><!----> <a href="/blog/website.html" class="nav-link">阿里云建站</a></li><li class="dropdown-item"><!----> <a href="/blog/jenkins.html" class="nav-link">jenkins搭建</a></li><li class="dropdown-item"><!----> <a href="/blog/react.html" class="nav-link">react笔记</a></li><li class="dropdown-item"><!----> <a href="/blog/angular.html" class="nav-link">angular笔记</a></li><li class="dropdown-item"><!----> <a href="/blog/h5.html" class="nav-link">H5</a></li><li class="dropdown-item"><!----> <a href="/blog/chrome.html" class="nav-link">chorme</a></li><li class="dropdown-item"><!----> <a href="/blog/mianshi.html" class="nav-link">常见冷知识</a></li><li class="dropdown-item"><!----> <a href="/blog/aa.html" class="nav-link">待整理</a></li></ul></div></div><div class="nav-item"><a href="/about/" class="nav-link">关于</a></div><div class="nav-item"><a href="https://github.com/guangming95" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>vue-element</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/blog/vue-element.html#element部分" class="sidebar-link">Element部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue-element.html#表单自定义校验规则" class="sidebar-link">表单自定义校验规则</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#自定义校验规则" class="sidebar-link">自定义校验规则</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#整数校验" class="sidebar-link">整数校验</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#小数校验-样例为两位，自定义校验方式" class="sidebar-link">小数校验(样例为两位，自定义校验方式)</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#数组校验" class="sidebar-link">数组校验</a></li></ul></li><li><a href="/blog/vue-element.html#时间日期选择器" class="sidebar-link">时间日期选择器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue-element.html#组件代码" class="sidebar-link">组件代码</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#设置选择今天以及今天之后的日期" class="sidebar-link">设置选择今天以及今天之后的日期</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#设置选择今天以及今天以前的日期" class="sidebar-link">设置选择今天以及今天以前的日期</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#设置选择今天之后的日期（不能选择当天时间）" class="sidebar-link">设置选择今天之后的日期（不能选择当天时间）</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#设置选择今天之前的日期（不能选择当天）" class="sidebar-link">设置选择今天之前的日期（不能选择当天）</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#设置选择三个月之前到今天的日期" class="sidebar-link">设置选择三个月之前到今天的日期</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#一个选择框限制选30天的日期" class="sidebar-link">一个选择框限制选30天的日期</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#两个输入框" class="sidebar-link">两个输入框</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#限制结束日期不能大于开始日期" class="sidebar-link">限制结束日期不能大于开始日期</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#取消校验与添加校验" class="sidebar-link">取消校验与添加校验</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#清除默认校验及表单内容" class="sidebar-link">清除默认校验及表单内容</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#resetfields-无效果" class="sidebar-link">resetFields() 无效果</a></li></ul></li><li><a href="/blog/vue-element.html#表格" class="sidebar-link">表格</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue-element.html#表格复选框禁用" class="sidebar-link">表格复选框禁用</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#表格进行切换时报错问题" class="sidebar-link">表格进行切换时报错问题</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#表格行内样式" class="sidebar-link">表格行内样式</a></li></ul></li><li><a href="/blog/vue-element.html#dailog弹窗" class="sidebar-link">dailog弹窗</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue-element.html#element-ui框架的el-dialog弹出框被遮罩层挡住" class="sidebar-link">element-ui框架的el-dialog弹出框被遮罩层挡住</a></li></ul></li><li><a href="/blog/vue-element.html#vue-部分" class="sidebar-link">Vue 部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue点击复制" class="sidebar-link">vue点击复制</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue-echarts" class="sidebar-link">vue echarts</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue蒙层禁止页面滑动" class="sidebar-link">vue蒙层禁止页面滑动</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#h5视频" class="sidebar-link">h5视频</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue-拖动排序" class="sidebar-link">vue-拖动排序</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue接入阿里云上传" class="sidebar-link">vue接入阿里云上传</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#阿里云点播服务" class="sidebar-link">阿里云点播服务</a></li></ul></li><li><a href="/blog/vue-element.html#vue-router" class="sidebar-link">vue-router</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue-element.html#router-replace-route-query更新，但url与页面数据不更新" class="sidebar-link">$router.replace() route.query更新，但url与页面数据不更新</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue-keep-alive-刷新数据" class="sidebar-link">vue keep-alive 刷新数据</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue-新页面打开" class="sidebar-link">vue 新页面打开</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#vue-router-点击同一个页面，异常处理" class="sidebar-link">vue-router 点击同一个页面，异常处理</a></li><li class="sidebar-sub-header"><a href="/blog/vue-element.html#当前dom-滚动到视图区域" class="sidebar-link">当前dom 滚动到视图区域</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><p></p><div class="table-of-contents"><ul><li><a href="#element部分">Element部分</a><ul><li><a href="#表单自定义校验规则">表单自定义校验规则</a></li><li><a href="#自定义校验规则">自定义校验规则</a></li><li><a href="#整数校验">整数校验</a></li><li><a href="#小数校验-样例为两位，自定义校验方式">小数校验(样例为两位，自定义校验方式)</a></li><li><a href="#数组校验">数组校验</a></li></ul></li><li><a href="#时间日期选择器">时间日期选择器</a><ul><li><a href="#组件代码">组件代码</a></li><li><a href="#设置选择今天以及今天之后的日期">设置选择今天以及今天之后的日期</a></li><li><a href="#设置选择今天以及今天以前的日期">设置选择今天以及今天以前的日期</a></li><li><a href="#设置选择今天之后的日期（不能选择当天时间）">设置选择今天之后的日期（不能选择当天时间）</a></li><li><a href="#设置选择今天之前的日期（不能选择当天）">设置选择今天之前的日期（不能选择当天）</a></li><li><a href="#设置选择三个月之前到今天的日期">设置选择三个月之前到今天的日期</a></li><li><a href="#一个选择框限制选30天的日期">一个选择框限制选30天的日期</a></li><li><a href="#两个输入框">两个输入框</a></li><li><a href="#限制结束日期不能大于开始日期">限制结束日期不能大于开始日期</a></li><li><a href="#取消校验与添加校验">取消校验与添加校验</a></li><li><a href="#清除默认校验及表单内容">清除默认校验及表单内容</a></li><li><a href="#resetfields-无效果">resetFields() 无效果</a></li></ul></li><li><a href="#表格">表格</a><ul><li><a href="#表格复选框禁用">表格复选框禁用</a></li><li><a href="#表格进行切换时报错问题">表格进行切换时报错问题</a></li><li><a href="#表格行内样式">表格行内样式</a></li></ul></li><li><a href="#dailog弹窗">dailog弹窗</a><ul><li><a href="#element-ui框架的el-dialog弹出框被遮罩层挡住">element-ui框架的el-dialog弹出框被遮罩层挡住</a></li></ul></li><li><a href="#vue-部分">Vue 部分</a><ul><li><a href="#vue点击复制">vue点击复制</a></li><li><a href="#vue-echarts">vue echarts</a></li><li><a href="#vue蒙层禁止页面滑动">vue蒙层禁止页面滑动</a></li><li><a href="#h5视频">h5视频</a></li><li><a href="#vue-拖动排序">vue-拖动排序</a></li><li><a href="#vue接入阿里云上传">vue接入阿里云上传</a></li><li><a href="#阿里云点播服务">阿里云点播服务</a></li></ul></li><li><a href="#vue-router">vue-router</a><ul><li><a href="#router-replace-route-query更新，但url与页面数据不更新">$router.replace() route.query更新，但url与页面数据不更新</a></li><li><a href="#vue-keep-alive-刷新数据">vue keep-alive 刷新数据</a></li><li><a href="#vue-新页面打开">vue 新页面打开</a></li><li><a href="#vue-router-点击同一个页面，异常处理">vue-router 点击同一个页面，异常处理</a></li><li><a href="#当前dom-滚动到视图区域">当前dom 滚动到视图区域</a></li></ul></li></ul></div><p></p> <h2 id="element部分"><a href="#element部分" aria-hidden="true" class="header-anchor">#</a> Element部分</h2> <h3 id="表单自定义校验规则"><a href="#表单自定义校验规则" aria-hidden="true" class="header-anchor">#</a> 表单自定义校验规则</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>const VDT = {
+  messages: {
+      required: &quot;这是必填字段&quot;,
+      remote: &quot;请修正此字段&quot;,
+      email: &quot;请输入有效的电子邮件地址&quot;,
+      url: &quot;请输入有效的网址&quot;,
+      date: &quot;请输入有效的日期&quot;,
+      dateISO: &quot;请输入有效的日期 (YYYY-MM-DD)&quot;,
+      number: &quot;请输入有效的数字&quot;,
+      digits: &quot;只能输入数字&quot;,
+      creditcard: &quot;请输入有效的信用卡号码&quot;,
+      equalTo: &quot;你的输入不相同&quot;,
+      extension: &quot;请输入有效的后缀&quot;,
+      minlength: &quot;输入字数过短&quot;,
+      maxlength: &quot;输入字数过长&quot;,
+      mphone: &quot;请输入正确的手机号格式&quot;,
+      tphone: &quot;请输入正确的电话格式&quot;,
+      postal: &quot;请输入正确的邮编格式&quot;
+  },
+  required: function (value, param) {
+      return value != undefined ? (value.toString().length &gt; 0) : false;
+  },
+  email: function (value) {
+      return /^[a-zA-Z0-9.!#$%&amp;'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,6[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(value);
+  },
+  url: function (value) {
+    return /^(?:(?:(?:https?|ftp):)?\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d| [0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:  (?:[a-z\u00a1-\uffff]{2,})).?)(?::\d{2,5})?(?:[/?#]\S*)?$/i.test(value);
+  },
+  date: function (value) {
+      return !/Invalid|NaN/.test(new Date(value).toString());
+  },
+  dateISO: function (value) {
+      return /^\d{4}[\/\-](0?[1-9]|1[012])[\/\-](0?[1-9]|[12][0-9]|3[01])$/.te(value);
+  },
+  number: function (value) {
+      return /^(?:-?\d+|-?\d{1,3}(?:,\d{3})+)?(?:\.\d+)?$/.test(value);
+  },
+  digits: function (value) {
+      return /^\d+$/.test(value);
+  },
+  isarr: function (o) {
+      return Object.prototype.toString.call(o) == '[object Array]';
+  },
+  minlength: function (value, param) {
+      return value.length &gt;= param;
+  },
+  maxlength: function (value, param) {
+      return value.length &lt;= param;
+  },
+  rangelength: function (value, param) {
+      var length = $.isArray(value) ? value.length : this.getLength(value);
+      return (length &gt;= param[0] &amp;&amp; length &lt;= param[1]);
+  },
+  min: function (value, param) {
+      return value &gt;= param;
+  },
+  max: function (value, param) {
+      return value &lt;= param;
+  },
+  range: function (value, param) {
+      return (value &gt;= param[0] &amp;&amp; value &lt;= param[1]);
+  },
+  equalTo: function (value, param) {
+      return value === param;
+  },
+  mphone: function (value) {
+      return /^1[3|4|5|8][0-9]\d{4,8}$/.test(value);
+  },
+  tphone: function (value) {
+      return /^[+]{0,1}(\d){1,3}[ ]?([-]?((\d)|[ ]){1,12})+$/.test(value);
+  },
+  postal: function (value) {
+      return /^[a-zA-Z0-9 ]{3,12}$/g.test(value);
+  },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br></div></div><h3 id="自定义校验规则"><a href="#自定义校验规则" aria-hidden="true" class="header-anchor">#</a> 自定义校验规则</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>mobile:[
+  { required: true, message: '请输入手机号码', trigger: 'blur'},
+  {validator:function(rule,value,callback){
+      if(/^1[34578]\d{9}$/.test(value) == false){
+          callback(new Error(&quot;请输入正确的手机号&quot;));
+      }else{
+          callback();
+      }
+  }, trigger: 'blur'}
+],
+
+ ---------------------- 
+:rules=&quot;[
+  {required: true, message: '这里不能为空'},
+  { validator: (rule, value, callback) =&gt; {
+      if (value) {
+        checkPrizeWeight(rule, value, callback)
+      } else {
+        callback()
+      }
+    },
+  }
+]
+
+checkPrizeWeight (rule, value, callback) {
+  if (value &gt; 0) {
+    callback()
+  } else {
+    callback(new Error('应填写大于0的数字'))
+  }
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">自定义校验参数含义</p> <p>rule为规则，value是输入的值，callback是规则不通过的回调。</p> <p>element官网的例子中这个函数是在data里面写的，使用时也可以写到methods中，然后用this.xxx()调用</p></div> <h3 id="整数校验"><a href="#整数校验" aria-hidden="true" class="header-anchor">#</a> 整数校验</h3> <ol><li>2.4.11 及以上的版本，官方方法</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-form-item
+  label=&quot;年龄&quot;
+  prop=&quot;age&quot;
+  :rules=&quot;[
+    { required: true, message: '年龄不能为空'},
+    { type: 'number', message: '年龄必须为数字值'}
+  ]&quot;
+&gt;
+  &lt;el-input type=&quot;age&quot; v-model.number=&quot;numberValidateForm.age&quot; autocomplete=&quot;off&quot;&gt;&lt;/el-input&gt;
+&lt;/el-form-item&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol start="2"><li>常规方法</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-form-item label=&quot;提醒时间(结束前N小时)&quot; :prop=&quot;`unfinishedTaskNotice.beforeEndReminderHours`&quot;&gt;
+  &lt;el-input v-model.number=&quot;activityForm.unfinishedTaskNotice.beforeEndReminderHours&quot; class=&quot;w800&quot;&gt;&lt;/el-input&gt;
+&lt;/el-form-item&gt;
+----------------------------------------------------------------------------------------------
+'unfinishedTaskNotice.beforeEndReminderHours': [
+  {required: true, message: '提醒时间(结束前N小时)不能为空'},
+  {type: 'integer', message: '提醒时间(结束前N小时)必须为正整数'},
+  {
+    validator: (rule, value, callback) =&gt; {
+      if (value &gt;= 1 &amp;&amp; value &lt;= 48) {
+        callback()
+      } else {
+        callback(new Error('提醒时间(结束前N小时)应为大于等于1且小于等于48的正整数'))
+      }
+    },
+    trigger: 'blur',
+  }
+],
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">数值类型注意事项</p> <p>1、数值类型的校验不能加 trigger: 'blur'  会校验报错</p> <p>2、数值类型校验，应使用 v-model.number=&quot;变量&quot; 会自动将 input 值转为数值</p></div> <ol start="3"><li>在 2.3.9 及 以下版本会出现 <code>4f</code> 也可以校验通过的情况，可以尝试下面的方法</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>checkInt (rule, value, callback) {
+  if ((Number(value))&amp;&amp;(value)%1 === 0 &amp;&amp; value.indexOf('.') == -1) {
+    callback();
+  }else {
+    return callback(new Error('已上课次应为大于等于0，小于等于100的正整数'));
+  }
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="小数校验-样例为两位，自定义校验方式"><a href="#小数校验-样例为两位，自定义校验方式" aria-hidden="true" class="header-anchor">#</a> 小数校验(样例为两位，自定义校验方式)</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>checkClassTimeRule (rule, value, callback) {
+  let num = value.toString()
+  if (num.indexOf('.') &gt;= 0 ) {
+    //小数
+    if (value &gt; 0 &amp;&amp; num.split(&quot;.&quot;)[1].length &lt;= 2 &amp;&amp; num.indexOf('.') !== 0) {
+      callback()
+    } else {
+      callback(new Error('应填写大于0，最多两位小数的正数'))
+    }
+  } else {
+    if (value &gt; 0) {
+      callback()
+    } else {
+      callback(new Error('应填写大于0,最多两位小数的正数'))
+    }
+  }
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="数组校验"><a href="#数组校验" aria-hidden="true" class="header-anchor">#</a> 数组校验</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-form-item label=&quot;奖品图片&quot; :prop=&quot;`passNotices.${i}.prizeImg`&quot; :rules=&quot;[{required: true, message: '奖品图片不能为空'}]&quot;&gt;
+  ---------------------------------------------------------------------------------------------
+'freshUserNotices.1.msg': [
+    {max: 500, message: '新用户裂变链接生成客服消息应小于500字'}
+],
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h5 id="相关链接"><a href="#相关链接" aria-hidden="true" class="header-anchor">#</a> 相关链接</h5> <p><a href="http://likaiqiang.site/2017/03/22/element-ui%E4%B8%AD%E7%9A%84%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/" target="_blank" rel="noopener noreferrer">element-ui中的表单验证<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://www.jianshu.com/p/e4bff7d93e7d" target="_blank" rel="noopener noreferrer">Element UI自定义表单验证插件<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="时间日期选择器"><a href="#时间日期选择器" aria-hidden="true" class="header-anchor">#</a> 时间日期选择器</h2> <h3 id="组件代码"><a href="#组件代码" aria-hidden="true" class="header-anchor">#</a> 组件代码</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-date-picker
+  v-model=&quot;value1&quot;
+  type=&quot;date&quot;
+  placeholder=&quot;选择日期&quot;
+  :picker-options=&quot;pickerOptions0&quot;&gt;
+&lt;/el-date-picker&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="设置选择今天以及今天之后的日期"><a href="#设置选择今天以及今天之后的日期" aria-hidden="true" class="header-anchor">#</a> 设置选择今天以及今天之后的日期</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>data (){
+  return {
+      pickerOptions0: {
+         disabledDate(time) {
+           return time.getTime() &lt; Date.now() - 8.64e7;
+         }
+       },  
+  }     
+}    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="设置选择今天以及今天以前的日期"><a href="#设置选择今天以及今天以前的日期" aria-hidden="true" class="header-anchor">#</a> 设置选择今天以及今天以前的日期</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>data (){
+   return {
+       pickerOptions0: {
+          disabledDate(time) {
+            return time.getTime() &gt; Date.now() - 8.64e6
+          }
+        },  
+   }     
+}   
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="设置选择今天之后的日期（不能选择当天时间）"><a href="#设置选择今天之后的日期（不能选择当天时间）" aria-hidden="true" class="header-anchor">#</a> 设置选择今天之后的日期（不能选择当天时间）</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>data (){
+   return {
+       pickerOptions0: {
+          disabledDate(time) {
+            return time.getTime() &lt; Date.now();
+          }
+        },  
+   }     
+} 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="设置选择今天之前的日期（不能选择当天）"><a href="#设置选择今天之前的日期（不能选择当天）" aria-hidden="true" class="header-anchor">#</a> 设置选择今天之前的日期（不能选择当天）</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>data (){
+   return {
+       pickerOptions0: {
+          disabledDate(time) {
+            return time.getTime() &gt; Date.now();
+          }
+        },  
+   }     
+}    
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="设置选择三个月之前到今天的日期"><a href="#设置选择三个月之前到今天的日期" aria-hidden="true" class="header-anchor">#</a> 设置选择三个月之前到今天的日期</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>data (){
+   return {
+       pickerOptions0: {
+          disabledDate(time) {
+            let curDate = (new Date()).getTime();
+            let three = 90 * 24 * 3600 * 1000;
+            let threeMonths = curDate - three;
+            return time.getTime() &gt; Date.now() || time.getTime() &lt; threeMonths;;
+          }
+        },  
+   }     
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="一个选择框限制选30天的日期"><a href="#一个选择框限制选30天的日期" aria-hidden="true" class="header-anchor">#</a> 一个选择框限制选30天的日期</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-date-picker
+  v-model=&quot;rangeDate&quot;
+  :picker-options=&quot;pickerOptions&quot;
+  type=&quot;daterange&quot;
+  range-separator=&quot;-&quot;
+  value-format=&quot;yyyy/MM/dd&quot;
+  start-placeholder=&quot;历史开始日期&quot;
+  end-placeholder=&quot;历史结束日期&quot;
+  :clearable=false&gt;
+&lt;/el-date-picker&gt;
+
+pickerOptions: {
+  onPick(time){
+    if (!time.maxDate) {
+      let timeRange = 5*24*60*60*1000  // 天数
+      _minTime = time.minDate.getTime() - timeRange // 最小时间
+      _maxTime = time.minDate.getTime() + timeRange // 最大时间
+    } else {
+      _minTime = _maxTime = null
+    }
+  },
+  disabledDate(time) {
+    if(_minTime &amp;&amp; _maxTime){
+      return time.getTime() &lt; _minTime || time.getTime() &gt; _maxTime
+    }
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p><a href="https://segmentfault.com/a/1190000017819415" target="_blank" rel="noopener noreferrer">element-ui 时间选择器限制范围（随动）<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="两个输入框"><a href="#两个输入框" aria-hidden="true" class="header-anchor">#</a> 两个输入框</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-date-picker
+  v-model=&quot;value1&quot;
+  type=&quot;date&quot;
+  placeholder=&quot;开始日期&quot;
+  :picker-options=&quot;pickerOptions0&quot;&gt;
+&lt;/el-date-picker&gt;
+&lt;el-date-picker
+  v-model=&quot;value2&quot;
+  type=&quot;date&quot;
+  placeholder=&quot;结束日期&quot;
+  :picker-options=&quot;pickerOptions1&quot;&gt;
+&lt;/el-date-picker&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="限制结束日期不能大于开始日期"><a href="#限制结束日期不能大于开始日期" aria-hidden="true" class="header-anchor">#</a> 限制结束日期不能大于开始日期</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>data(){
+  return {
+    pickerOptions0: {
+      disabledDate: (time) =&gt; {
+        if (this.value2 != &quot;&quot;) {
+          return time.getTime() &gt; Date.now() || time.getTime() &gt; this.value2;
+        } else {
+          return time.getTime() &gt; Date.now();
+        }
+      ​}
+    },
+    pickerOptions1: {
+      disabledDate: (time) =&gt; {
+        return time.getTime() &lt; this.value1 || time.getTime() &gt; Date.now();
+      }
+    },
+  }      
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">注：</p> <p>针对选择范围(type=&quot;daterange&quot;)的日期筛选，类似于单个输入框的情况，直接使用参数time进行判断</p></div> <h3 id="取消校验与添加校验"><a href="#取消校验与添加校验" aria-hidden="true" class="header-anchor">#</a> 取消校验与添加校验</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>clearForm () {
+  // 禁用校验
+  this.$refs.activityForm.$children.forEach($item =&gt; {
+    $item.validateDisabled = true
+  })
+  for (let key in this.activityForm) {
+    let value = this.activityForm[key]
+    if (typeof value === 'string') {
+      this.$set(this.activityForm, key, '')
+    }
+    if (typeof value === 'number') {
+      this.$set(this.activityForm, key, '')
+    }
+    if (Array.isArray(value)) {
+      this.$set(this.activityForm, key, [])
+    }
+  }
+  // 开启校验
+  this.$nextTick(() =&gt; {
+    this.$refs.activityForm.$children.forEach($item =&gt; {
+      $item.validateDisabled = false
+    })
+  })
+},
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="清除默认校验及表单内容"><a href="#清除默认校验及表单内容" aria-hidden="true" class="header-anchor">#</a> 清除默认校验及表单内容</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.$nextTick(() =&gt; {
+  this.$refs['form'].resetFields()
+  this.form = Object.assign(this.form, row)
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>拉取数据时，先清空表单，再赋值数据</p></div> <h3 id="resetfields-无效果"><a href="#resetfields-无效果" aria-hidden="true" class="header-anchor">#</a> resetFields() 无效果</h3> <p>是因为 element-ui resetFields() 方法记录第一次渲染时，form数据</p> <p>所以 dialog 为 true 后，重置一下表单，并且在 nextTick 后再给 form 赋值</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.dialogVisible = true
+this.$refs['form'].resetFields()
+this.$nextTick(() =&gt; {
+  Object.assign(this.form, res.data.info)
+  this.$set(this.form, 'name', res.data.info.jobName)
+  this.$set(this.form, 'projectid', res.data.info.projectId)
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p><a href="https://github.com/ElemeFE/element/issues/1871" target="_blank" rel="noopener noreferrer">form resetFields并没有清空表单<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://blog.csdn.net/weixin_41991501/article/details/81975821" target="_blank" rel="noopener noreferrer">element-ui 表单清空 resetFields 方法清空表单中的坑<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="表格"><a href="#表格" aria-hidden="true" class="header-anchor">#</a> 表格</h2> <h3 id="表格复选框禁用"><a href="#表格复选框禁用" aria-hidden="true" class="header-anchor">#</a> 表格复选框禁用</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>checkboxDisable (row, index) {
+  if (row.importFlag === 1) {
+    return true
+  } else {
+    return false
+  }
+},
+&lt;el-dialog&gt;
+  &lt;el-table
+    ref=&quot;multipleTable&quot;
+    :data=&quot;addChapterLists&quot;
+    &lt;el-table-column
+      type=&quot;selection&quot;
+      :selectable='checkboxDisbled'
+      width=&quot;55&quot;&gt;
+    &lt;/el-table-column&gt;
+    &lt;el-table-column
+      prop=&quot;chapterNum&quot;
+      label=&quot;章节序号&quot;
+      width=&quot;120&quot;&gt;
+    &lt;/el-table-column&gt;
+    &lt;el-table-column
+      prop=&quot;chapterTitle&quot;
+      label=&quot;章节标题&quot;&gt;
+    &lt;/el-table-column&gt;
+  &lt;/el-table&gt;
+  &lt;span slot=&quot;footer&quot; class=&quot;dialog-footer&quot;&gt;
+    &lt;span class=&quot;red&quot;&gt;注：导入顺序是按从前往后顺次导入的&lt;/span&gt;
+    &lt;el-button type=&quot;success&quot; @click=&quot;confirmAdd&quot; :disabled=&quot;submiting&quot;&gt; 提 交 导 入 &lt;/el-button&gt;
+  &lt;/span&gt;
+&lt;/el-dialog&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h3 id="表格进行切换时报错问题"><a href="#表格进行切换时报错问题" aria-hidden="true" class="header-anchor">#</a> 表格进行切换时报错问题</h3> <p>表格进行 <code>v-if</code> 切换时会抛异常 <code>Error in render function: &quot;TypeError: _self.$scopedSlots.default is not a function&quot;</code></p> <div class="tip custom-block"><p class="custom-block-title">解决办法</p> <p>有重复兄弟元素，进行切换时，用 <code>v-if</code> 控制的都应带上 <code>key</code> 防止重复渲染；同时也要保证 <code>key</code> 的唯一</p></div> <h3 id="表格行内样式"><a href="#表格行内样式" aria-hidden="true" class="header-anchor">#</a> 表格行内样式</h3> <p>太久不写容易忘记……</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-table-column
+  prop=&quot;type&quot;
+  label=&quot;挑战类型&quot;
+  inline-template&gt;
+  &lt;span&gt;{{row.type}}&lt;/span&gt;
+&lt;/el-table-column&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="dailog弹窗"><a href="#dailog弹窗" aria-hidden="true" class="header-anchor">#</a> dailog弹窗</h2> <h3 id="element-ui框架的el-dialog弹出框被遮罩层挡住"><a href="#element-ui框架的el-dialog弹出框被遮罩层挡住" aria-hidden="true" class="header-anchor">#</a> element-ui框架的el-dialog弹出框被遮罩层挡住</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>在el-dialog标签里添加 :modal-append-to-body='false'
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>若el-dialog弹出框设置了modal-append-to-body='true'（默认）属性，它的遮罩层就会被插入到body标签下（即与组件所在的最外层div同一层级）</p> <ul><li><a href="https://blog.csdn.net/Mr_JavaScript/article/details/80888681" target="_blank" rel="noopener noreferrer">相关链接:element-ui框架的el-dialog弹出框被遮罩层挡住了<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="vue-部分"><a href="#vue-部分" aria-hidden="true" class="header-anchor">#</a> Vue 部分</h2> <h3 id="vue点击复制"><a href="#vue点击复制" aria-hidden="true" class="header-anchor">#</a> vue点击复制</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;el-button class=&quot;copy-remind&quot; :data-clipboard-text=&quot;remindText&quot; @click=&quot;copyRemind&quot;&gt;复制&lt;/el-button&gt;
+
+import Clipboard from 'clipboard'
+
+copyRemind () {
+  let that = this
+  let clipboard = new Clipboard('.copy-remind')
+  clipboard.on('success', function () {
+    that.$message.success('复制成功')
+  })
+  clipboard.on('error', function () {
+    that.$message.error('复制失败，可能是浏览器不支持，最好使用Chrome浏览器哦😊')
+  })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h3 id="vue-echarts"><a href="#vue-echarts" aria-hidden="true" class="header-anchor">#</a> vue echarts</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 基于准备好的dom，初始化echarts实例
+//var bar_dv = document.getElementById('bar_dv');
+var bar_dv = this.$refs.chart;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>用document 会报错，当dom没有生成时，echarts图片没法绘制，所以需要通过$refs获取</p></div> <h3 id="vue蒙层禁止页面滑动"><a href="#vue蒙层禁止页面滑动" aria-hidden="true" class="header-anchor">#</a> vue蒙层禁止页面滑动</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div class=&quot;masktop&quot; @touchmove.prevent&gt;&lt;/div&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <p>直接在蒙层所在div上加@touchmove.prevent</p></div> <h3 id="h5视频"><a href="#h5视频" aria-hidden="true" class="header-anchor">#</a> h5视频</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;video ref=&quot;video&quot; id=&quot;my_video&quot; style=&quot;width: 100%; height: 100%;&quot; preload=&quot;load&quot; playsinline=&quot;true&quot; webkit-playsinline=&quot;true&quot; x-webkit-airplay=&quot;allow&quot; airplay=&quot;allow&quot; x5-video-player-type=&quot;h5&quot; x5-video-player-fullscreen=&quot;true&quot; x5-video-orientation=&quot;portrait&quot; src=&quot;url&quot; style=&quot;object-fit:fill&quot;&gt;&lt;/video&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">说明</p> <ul><li><p>preload=&quot;load&quot;  视频预加载</p></li> <li><p>playsinline=&quot;true&quot;  IOS微信浏览器支持小窗内播放</p></li> <li><p>webkit-playsinline=&quot;true&quot;  (具网上资料：这个属性是ios 10中设置可以让视频在小窗内播放，真机未测试)</p></li></ul> <p>视频播放时局域播放，不脱离文档流 。但是这个属性比较特别， 需要嵌入网页的APP比如WeChat中UIwebview 的allowsInlineMediaPlayback = YES webview.allowsInlineMediaPlayback = YES，才能生效。换句话说，如果APP不设置，你页面中加了这标签也无效，这也就是为什么安卓手机WeChat 播放视频总是全屏，因为APP不支持playsinline，而ISO的WeChat却支持。
+这里就要补充下，如果是想做全屏直播或者全屏H5体验的用户，IOS需要设置删除 webkit-playsinline 标签，因为你设置 false 是不支持的 ，安卓则不需要，因为默认全屏。但这时候全屏是有播放控件的，无论你有没有设置control。 做直播的可能用得着播放控件，但是全屏H5是不需要的，那么去除全屏播放时候的控件，需要以下设置：同层播放</p> <ul><li>x-webkit-airplay=&quot;allow&quot; airplay=&quot;allow&quot;</li></ul> <p>这个属性应该是使此视频支持ios的AirPlay功能。使用AirPlay可以直接从使用iOS的设备上的不同位置播放视频、音乐还有照片文件，也就是说通过AirPlay功能可以实现影音文件的无线播放，当然前提是播放的终端设备也要支持相应的功能</p> <ul><li>x5-video-player-type=&quot;h5&quot;</li></ul> <p>启用同层H5播放器，就是在视频全屏的时候，div可以呈现在视频层上，也是WeChat安卓版特有的属性。同层播放别名也叫做沉浸式播放，播放的时候看似全屏，但是已经除去了control和微信的导航栏，只留下&quot;X&quot;和&quot;&lt;&quot;两键。目前的同层播放器只在Android（包括微信）上生效，暂时不支持iOS。至于为什么同层播放只对安卓开放，是因为安卓不能像ISO一样局域播放，默认的全屏会使得一些界面操作被阻拦，如果是全屏H5还好，但是做直播的话，诸如弹幕那样的功能就无法实现了，所以这时候同层播放的概念就解决了这个问题。不过在测试的过程中发现，不同版本的IOS和安卓效果略有不同</p> <ul><li>x5-video-player-fullscreen=&quot;true&quot;</li></ul> <p>全屏设置。它又两个属性值，ture和false，true支持全屏播放，false不支持全屏播放。其实，IOS 微信浏览器是Chrome的内核，相关的属性都支持，也是为什么X5同层播放不支持的原因。安卓微信浏览器是X5内核，一些属性标签比如playsinline就不支持，所以始终全屏。</p> <ul><li>x5-video-orientation=&quot;portrait&quot;</li></ul> <p>声明播放器支持的方向，可选值landscape 横屏, portraint竖屏。默认值portraint。无论是直播还是全屏H5一般都是竖屏播放，但是这个属性需要x5-video-player-type开启H5模式</p> <ul><li>style=&quot;object-fit:fill&quot;</li></ul> <p>被替换的内容正好填充元素的内容框。整个对象将完全填充此框。如果对象的宽高比与内容框不相匹配，那么该对象将被拉伸以适应内容框。</p> <p><a href="https://www.zhangxinxu.com/wordpress/2015/03/css3-object-position-object-fit/" target="_blank" rel="noopener noreferrer">相关链接：object-fit<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div> <div class="language- line-numbers-mode"><pre class="language-text"><code>init () {
+  document.addEventListener('WeixinJSBridgeReady', () =&gt; {
+    let video = document.getElementById('my_video')
+    this.isWxLoad = true
+    video.load()
+  })
+  let video = document.querySelector('#my_video')
+  video.addEventListener('ended', this.end)
+  video.addEventListener('canplaythrough', this.checkVideo)
+}
+
+end () {
+  this.$refs.video.load()
+  this.$refs.video.pause()
+}
+
+checkVideo () {
+  let timer = this.timer = setInterval(() =&gt; {
+    if (this.isWxLoad) {
+      clearInterval(timer)
+    }
+  }, 2000)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><div class="tip custom-block"><p class="custom-block-title">说明</p> <ul><li>WeixinJSBridgeReady</li></ul> <p>监听微信官方事件，来进行视频载入，为了兼容ios不自动载入视频；但 WeixinJSBridgeReady 事件据说官方要删掉，使用前需测试</p> <ul><li>ended</li></ul> <p>监听是否播放完成，如播放完成，防止重复播放，进行暂停</p> <ul><li>canplaythrough</li></ul> <p>只有微信组件载入后，才能监听到canplaythrough事件，所以使用定时器进行监听判断</p></div> <ul><li><p>注：当前代码业务流程为，打开h5页面，首先是播放loading-gif图，待视频载入为可播放状态时，显示播放按钮，让用户触发按钮事件，进行播放</p></li> <li><p><a href="https://segmentfault.com/a/1190000009395289" target="_blank" rel="noopener noreferrer">相关链接:视频H5 video标签最佳实践<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p><a href="https://x5.tencent.com/tbs/guide/video.html" target="_blank" rel="noopener noreferrer">相关链接:官方文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li></ul> <h3 id="vue-拖动排序"><a href="#vue-拖动排序" aria-hidden="true" class="header-anchor">#</a> vue-拖动排序</h3> <p>插件：Sortable.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Sortable from 'sortablejs'
+
+initSort () {
+  let bookId = this.bookId
+  let pageIndex = 1
+  let pageSize = 200
+  getChapterLists({ bookId, pageIndex, pageSize })
+    .then(res =&gt; {
+      if (res.status === 0 &amp;&amp; res.data) {
+        let data = res.data
+        let { items } = data
+        this.sortDialogVisible = true
+        this.chapterLists = items
+        this.newList = this.chapterLists.map(v =&gt; v.chapterId)
+        this.$nextTick(() =&gt; {
+          this.setSort()
+        })
+      } else {
+        return Promise.reject(new Error(res.message || res.msg))
+      }
+    })
+    .catch(err =&gt; {
+      this.$message.error(err.message)
+    })
+},
+setSort () {
+  let el = document.querySelectorAll('.sortlist .el-table__body-wrapper &gt; table &gt; tbody')[0]
+  this.sortable = Sortable.create(el, {
+    ghostClass: 'sortable-ghost',
+    scroll: false,
+    setData: function (dataTransfer) {
+      dataTransfer.setData('Text', '')
+    },
+    onEnd: evt =&gt; {
+      const targetRow = this.chapterLists.splice(evt.oldIndex, 1)[0]
+      this.chapterLists.splice(evt.newIndex, 0, targetRow)
+      const tempIndex = this.newList.splice(evt.oldIndex, 1)[0]
+      this.newList.splice(evt.newIndex, 0, tempIndex)
+    }
+  })
+},
+
+&lt;el-dialog
+  title=&quot;章节排序&quot;
+  :visible.sync=&quot;sortDialogVisible&quot;
+  width=&quot;30%&quot;
+  :before-close=&quot;handleClose()&quot;&gt;
+  &lt;el-table
+    :data=&quot;chapterLists&quot;
+    border
+    height=&quot;500&quot;
+    highlight-current-row
+    row-key=&quot;chapterId&quot;
+    style=&quot;width: 100%&quot;&gt;
+    &lt;el-table-column
+      label=&quot;章节序号&quot;
+      type=&quot;index&quot;
+      width=&quot;100&quot;&gt;
+    &lt;/el-table-column&gt;
+    &lt;el-table-column
+      prop=&quot;chapterTitle&quot;
+      label=&quot;章节标题&quot;&gt;
+    &lt;/el-table-column&gt;
+    &lt;el-table-column
+      label=&quot;拖拽排序&quot;
+      inline-template&gt;
+      &lt;i class=&quot;el-icon-d-caret&quot;&gt;&lt;/i&gt;
+    &lt;/el-table-column&gt;
+  &lt;/el-table&gt;
+  &lt;span slot=&quot;footer&quot; class=&quot;dialog-footer&quot;&gt;
+    &lt;el-button type=&quot;success&quot; @click=&quot;confirmSort&quot; :disabled=&quot;submiting&quot;&gt; 提 交 排 序 &lt;/el-button&gt;
+  &lt;/span&gt;
+&lt;/el-dialog&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br></div></div><p><a href="https://segmentfault.com/a/1190000008209715" target="_blank" rel="noopener noreferrer">相关链接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="vue接入阿里云上传"><a href="#vue接入阿里云上传" aria-hidden="true" class="header-anchor">#</a> vue接入阿里云上传</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;container&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>label <span class="token punctuation">:</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token string">&quot;labelId&quot;</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;upload-button&quot;</span><span class="token operator">&gt;</span>点击上传<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>label<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">&quot;file&quot;</span> <span class="token punctuation">:</span>id<span class="token operator">=</span><span class="token string">&quot;labelId&quot;</span> <span class="token punctuation">:</span>accept<span class="token operator">=</span><span class="token string">&quot;accept&quot;</span> style<span class="token operator">=</span><span class="token string">&quot;display:none&quot;</span> @change<span class="token operator">=</span><span class="token string">&quot;fileChange($event)&quot;</span><span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fetchAliUploadToken <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/api/upload'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  mixins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  filters<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// @uploadSuccess 文件上传成功  返回videoId</span>
+    <span class="token comment">// @uploadFail 文件上传成功  返回videoId</span>
+
+    <span class="token comment">// item 类型 :</span>
+    <span class="token comment">// vid: vid 资源id,</span>
+    <span class="token comment">// fileName: uid之后的文件名,</span>
+    <span class="token comment">// initName: 文件原本初始化名称,</span>
+    <span class="token comment">// hashCode: vid,</span>
+    <span class="token comment">// storageLocation: 上传路径，默认为阿里空间建</span>
+
+    <span class="token comment">// 文件上传类型 默认 音频、视频</span>
+    accept<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'audio/*,video/*'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    indexData<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 是否显示上传成功的提示--默认提示</span>
+    showUploadSuccessTip<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> Boolean<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      file<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      uploadAuth<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      uploadAddress<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      videoId<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+      uploader<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      labelId<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">randomCoding</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      fileName<span class="token punctuation">:</span> <span class="token string">''</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  watch<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">created</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">createUploader</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">fileChange</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> file <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">.</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>file<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$Message<span class="token punctuation">.</span><span class="token function">errror</span><span class="token punctuation">(</span><span class="token string">'请先选择需要上传的文件~'</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">const</span> userData <span class="token operator">=</span> <span class="token string">'{&quot;Vod&quot;:{&quot;UserData&quot;:&quot;{&quot;IsShowWaterMark&quot;:&quot;false&quot;,&quot;Priority&quot;:&quot;7&quot;}&quot;}}'</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>uploader<span class="token punctuation">.</span><span class="token function">addFile</span><span class="token punctuation">(</span>file<span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> userData<span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>fileName <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">guid</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getfileExtname</span><span class="token punctuation">(</span>file<span class="token punctuation">.</span>name<span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>initName <span class="token operator">=</span> file<span class="token punctuation">.</span>name
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">fetchAliUploadToken</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>fileName<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">createUploader</span> <span class="token punctuation">(</span>fileName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> that <span class="token operator">=</span> <span class="token keyword">this</span>
+      <span class="token comment">/* eslint-disable no-undef */</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>uploader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VODUpload</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token comment">// 文件上传失败</span>
+        onUploadFailed<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>uploadInfo<span class="token punctuation">,</span> code<span class="token punctuation">,</span> message<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          that<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'uploadFail'</span><span class="token punctuation">,</span> that<span class="token punctuation">.</span>videoId<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 文件上传完成</span>
+        onUploadSucceed<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>uploadInfo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span>that<span class="token punctuation">.</span>showUploadSuccessTip<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            that<span class="token punctuation">.</span>$Message<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>that<span class="token punctuation">.</span>initName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">,文件上传成功，正在获取播放凭证，请稍后~`</span></span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span>
+          <span class="token comment">// 上传成功后，调取播放权限，会返回null，需要延迟执行</span>
+          <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            that<span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'uploadSuccess'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+              <span class="token operator">...</span>that<span class="token punctuation">.</span>indexData<span class="token punctuation">,</span>
+              vid<span class="token punctuation">:</span> that<span class="token punctuation">.</span>videoId<span class="token punctuation">,</span>
+              fileName<span class="token punctuation">:</span> that<span class="token punctuation">.</span>fileName<span class="token punctuation">,</span>
+              initName<span class="token punctuation">:</span> that<span class="token punctuation">.</span>initName<span class="token punctuation">,</span>
+              hashCode<span class="token punctuation">:</span> that<span class="token punctuation">.</span>videoId<span class="token punctuation">,</span>
+              storageLocation<span class="token punctuation">:</span> <span class="token string">'AliYun'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">2000</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 文件上传进度</span>
+        onUploadProgress<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>uploadInfo<span class="token punctuation">,</span> totalSize<span class="token punctuation">,</span> uploadedSize<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// STS临时账号会过期，过期时触发函数</span>
+        onUploadTokenExpired<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token comment">// 开始上传</span>
+        onUploadstarted<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span>uploadInfo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          that<span class="token punctuation">.</span>uploader<span class="token punctuation">.</span><span class="token function">setUploadAuthAndAddress</span><span class="token punctuation">(</span>uploadInfo<span class="token punctuation">,</span> that<span class="token punctuation">.</span>uploadAuth<span class="token punctuation">,</span> that<span class="token punctuation">.</span>uploadAddress<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>uploader<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">fetchAliUploadToken</span> <span class="token punctuation">(</span>fileName<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">fetchAliUploadToken</span><span class="token punctuation">(</span><span class="token punctuation">{</span> fileName<span class="token punctuation">:</span> fileName<span class="token punctuation">,</span> title<span class="token punctuation">:</span> fileName <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>res <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">const</span> info <span class="token operator">=</span> res<span class="token punctuation">.</span>data
+          <span class="token keyword">this</span><span class="token punctuation">.</span>videoId <span class="token operator">=</span> info<span class="token punctuation">.</span>videoId
+          <span class="token keyword">this</span><span class="token punctuation">.</span>uploadAuth <span class="token operator">=</span> info<span class="token punctuation">.</span>uploadAuthBase64
+          <span class="token keyword">this</span><span class="token punctuation">.</span>uploadAddress <span class="token operator">=</span> info<span class="token punctuation">.</span>uploadAddressBase64
+          <span class="token keyword">this</span><span class="token punctuation">.</span>uploader<span class="token punctuation">.</span><span class="token function">startUpload</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span>err <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'uploadFail'</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 文件后缀</span>
+    <span class="token function">getfileExtname</span> <span class="token punctuation">(</span>filename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> lastindex <span class="token operator">=</span> filename<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token punctuation">)</span>
+      <span class="token keyword">const</span> extname <span class="token operator">=</span> filename<span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span>lastindex<span class="token punctuation">)</span>
+      <span class="token keyword">return</span> extname
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 文件随机重命名</span>
+    <span class="token constant">S4</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0x10000</span><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">substring</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 文件随机码</span>
+    <span class="token function">guid</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'-'</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token constant">S4</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// label ID 随机</span>
+    <span class="token function">randomCoding</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">,</span> <span class="token string">'E'</span><span class="token punctuation">,</span> <span class="token string">'F'</span><span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">,</span> <span class="token string">'H'</span><span class="token punctuation">,</span> <span class="token string">'I'</span><span class="token punctuation">,</span> <span class="token string">'J'</span><span class="token punctuation">,</span> <span class="token string">'K'</span><span class="token punctuation">,</span> <span class="token string">'L'</span><span class="token punctuation">,</span> <span class="token string">'M'</span><span class="token punctuation">,</span> <span class="token string">'N'</span><span class="token punctuation">,</span> <span class="token string">'O'</span><span class="token punctuation">,</span> <span class="token string">'P'</span><span class="token punctuation">,</span> <span class="token string">'Q'</span><span class="token punctuation">,</span> <span class="token string">'R'</span><span class="token punctuation">,</span> <span class="token string">'S'</span><span class="token punctuation">,</span> <span class="token string">'T'</span><span class="token punctuation">,</span> <span class="token string">'U'</span><span class="token punctuation">,</span> <span class="token string">'V'</span><span class="token punctuation">,</span> <span class="token string">'W'</span><span class="token punctuation">,</span> <span class="token string">'X'</span><span class="token punctuation">,</span> <span class="token string">'Y'</span><span class="token punctuation">,</span> <span class="token string">'Z'</span><span class="token punctuation">]</span>
+      <span class="token keyword">let</span> idvalue <span class="token operator">=</span> <span class="token string">''</span>
+      <span class="token keyword">const</span> n <span class="token operator">=</span> <span class="token number">8</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        idvalue <span class="token operator">+=</span> arr<span class="token punctuation">[</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">26</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+      <span class="token keyword">return</span> idvalue
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br></div></div><h3 id="阿里云点播服务"><a href="#阿里云点播服务" aria-hidden="true" class="header-anchor">#</a> 阿里云点播服务</h3> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>template<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;ali-player&quot;</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;in-player&quot;</span>
+         <span class="token punctuation">:</span>id<span class="token operator">=</span><span class="token string">&quot;playerId&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">&gt;</span>
+
+<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> fetchAliPlayToken <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@/api/upload'</span>
+<span class="token comment">// aliplayer h5 格式播放器的 js 地址</span>
+<span class="token keyword">const</span> jsPath <span class="token operator">=</span> <span class="token string">'https://g.alicdn.com/de/prismplayer/2.8.1/aliplayer-h5-min.js'</span>
+<span class="token comment">// aliplayer h5 格式播放器的 css 地址</span>
+<span class="token keyword">const</span> cssPath <span class="token operator">=</span> <span class="token string">'https://g.alicdn.com/de/prismplayer/2.8.1/skins/default/aliplayer-min.css'</span>
+
+<span class="token comment">// 视频的长宽比例，采用 width / height 得到，基本按照 16:9 获取</span>
+<span class="token keyword">const</span> ratio <span class="token operator">=</span> <span class="token number">1.78</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'in-player'</span><span class="token punctuation">,</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 父容器传入的视频 vid</span>
+    vid<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+    options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> Object<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 父容器传入的播放器宽度</span>
+    <span class="token comment">// width: Number,</span>
+    <span class="token comment">// // 父容器传入的播放器高度</span>
+    <span class="token comment">// height: Number</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 内部真是的 vid</span>
+      <span class="token comment">// videoId: this.vid,</span>
+      <span class="token comment">// 默认宽度</span>
+      <span class="token comment">// defaultWidth: 718,</span>
+      <span class="token comment">// // 默认高度</span>
+      <span class="token comment">// defaultHeight: 400,</span>
+      <span class="token comment">// 每个播放器都具有单独的 id</span>
+      playerId<span class="token punctuation">:</span> <span class="token string">'inPlayer'</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">100000000000000000</span><span class="token punctuation">,</span>
+      <span class="token comment">// 通过 vid 从后端获取到的鉴权地址</span>
+      playAuth<span class="token punctuation">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+      <span class="token comment">// 播放器实例</span>
+      inPlayer<span class="token punctuation">:</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 计算后得到的真实宽度</span>
+    <span class="token comment">// realWidth () {</span>
+    <span class="token comment">//   // 如果从外部传入了高度，则按照外部高度乘以宽高比，获取真实宽度，否则按照默认高度计算</span>
+    <span class="token comment">//   return `${(this.height || this.defaultHeight) * ratio}px`</span>
+    <span class="token comment">//   // return '100%'</span>
+    <span class="token comment">// },</span>
+    <span class="token comment">// // 计算后得到真实高度</span>
+    <span class="token comment">// realHeight () {</span>
+    <span class="token comment">//   // 如果从外部传入了宽度，则按照外部宽度乘以宽高比，获取真实高度，否则按照默认宽度计算</span>
+    <span class="token comment">//   return `${(this.width || this.defaultWidth) / ratio}px`</span>
+    <span class="token comment">//   // return '100%'</span>
+    <span class="token comment">// }</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">mounted</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 在 mounted() 中初始化播放器，是为了确保基本元素都已经加载</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_initialize</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 初始化</span>
+    <span class="token function">_initialize</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 判断播放器全局实例是否已存在，只有当播放器依赖的 JS 加载完成后，播放器的全局实例才存在</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>window<span class="token punctuation">.</span>Aliplayer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 尝试获取播放器的 JS 标签</span>
+        <span class="token keyword">let</span> inPlayerScriptTag <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'inPlayerScriptTag'</span><span class="token punctuation">)</span>
+
+        <span class="token comment">// 判断JS是否已存在</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>inPlayerScriptTag<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 不存在则创建 JS 标签</span>
+          inPlayerScriptTag <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'script'</span><span class="token punctuation">)</span>
+          inPlayerScriptTag<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'text/javascript'</span>
+          <span class="token comment">// 指定 JS 的地址</span>
+          inPlayerScriptTag<span class="token punctuation">.</span>src <span class="token operator">=</span> jsPath
+          <span class="token comment">// 指定 JS 的 ID</span>
+          inPlayerScriptTag<span class="token punctuation">.</span>id <span class="token operator">=</span> <span class="token string">'inPlayerScriptTag'</span>
+
+          <span class="token comment">// JS 不存在说明 CSS 也不存在，则创建 CSS 标签</span>
+          <span class="token keyword">const</span> inPlayerLinkTag <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">'link'</span><span class="token punctuation">)</span>
+          inPlayerLinkTag<span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'text/css'</span>
+          inPlayerLinkTag<span class="token punctuation">.</span>rel <span class="token operator">=</span> <span class="token string">'stylesheet'</span>
+          <span class="token comment">// 指定 CSS 的地址</span>
+          inPlayerLinkTag<span class="token punctuation">.</span>href <span class="token operator">=</span> cssPath
+
+          <span class="token comment">// 获取页面的 &lt;head&gt; 标签</span>
+          <span class="token keyword">const</span> head <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementsByTagName</span><span class="token punctuation">(</span><span class="token string">'head'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+          <span class="token comment">// 将 JS 和 CSS 插入到 DOM 中</span>
+          head<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>inPlayerScriptTag<span class="token punctuation">)</span>
+          head<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>inPlayerLinkTag<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// JS 插入并加载完成</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>inPlayerScriptTag<span class="token punctuation">.</span>loaded<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 初始化播放器</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_initPlayer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token comment">// JS 没有加载完成，则监听 JS 的加载事件</span>
+          inPlayerScriptTag<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'load'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token comment">// JS 确认加载完成后，初始化播放器</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_initPlayer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 全局实例存在则直接初始化播放器</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_initPlayer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 初始化播放器</span>
+    <span class="token function">_initPlayer</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 确保 DOM 元素都已经渲染完毕</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$nextTick</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 判断播放器实例是否存在</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>inPlayer<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 获取鉴权地址，从后端获取</span>
+          <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token keyword">this</span><span class="token punctuation">.</span>vid<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>inPlayer <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">Aliplayer</span><span class="token punctuation">(</span><span class="token punctuation">{</span> id<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>playerId <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span>
+          <span class="token punctuation">}</span>
+          <span class="token function">fetchAliPlayToken</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            videoId<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>vid
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">const</span> timer <span class="token operator">=</span> <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token function">clearTimeout</span><span class="token punctuation">(</span>timer<span class="token punctuation">)</span>
+                <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">changePlayAuth</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">3000</span><span class="token punctuation">)</span>
+              <span class="token keyword">return</span>
+            <span class="token punctuation">}</span>
+            <span class="token comment">// 接收从后端获取的鉴权地址，后端实现不赘述</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>playAuth <span class="token operator">=</span> res<span class="token punctuation">.</span>data
+
+            <span class="token keyword">const</span> defaultOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+              <span class="token comment">// 播放器 ID</span>
+              id<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>playerId<span class="token punctuation">,</span>
+              <span class="token comment">// 视频的 VID</span>
+              vid<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>vid<span class="token punctuation">,</span>
+              <span class="token comment">// 鉴权地址</span>
+              playauth<span class="token punctuation">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>playAuth<span class="token punctuation">,</span>
+              <span class="token comment">// 宽度</span>
+              <span class="token comment">// width: this.realWidth,</span>
+              <span class="token comment">// // 高度</span>
+              <span class="token comment">// height: this.realHeight,</span>
+              <span class="token comment">// 使用 H5 格式</span>
+              useH5Prism<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+              <span class="token comment">// 不是直播</span>
+              isLive<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+              <span class="token comment">// 不自动播放</span>
+              autoplay<span class="token punctuation">:</span> <span class="token boolean">false</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">const</span> options <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> defaultOptions<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>options<span class="token punctuation">)</span>
+            <span class="token comment">// 初始化播放器</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>inPlayer <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">Aliplayer</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          <span class="token comment">// 存在播放器实例则先销毁组件</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>inPlayer<span class="token punctuation">.</span><span class="token function">dispose</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+          <span class="token comment">// 将播放器实例重置</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>inPlayer <span class="token operator">=</span> <span class="token keyword">null</span>
+          <span class="token comment">// 清空播放器 DOM 内容</span>
+          document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>playerId<span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">''</span>
+          <span class="token comment">// console.log('销毁')</span>
+          <span class="token comment">// 再次初始化</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_initPlayer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 更新播放地址</span>
+    <span class="token function">changePlayAuth</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 重新初始化</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_initPlayer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">// inIcon</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br></div></div><h2 id="vue-router"><a href="#vue-router" aria-hidden="true" class="header-anchor">#</a> vue-router</h2> <h3 id="router-replace-route-query更新，但url与页面数据不更新"><a href="#router-replace-route-query更新，但url与页面数据不更新" aria-hidden="true" class="header-anchor">#</a> $router.replace() route.query更新，但url与页面数据不更新</h3> <p>原代码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>let query = this.$route.query
+query.pageNo = 1
+this.$router.replace({
+  path: '/yyyyy/zzzzz',
+  query: query
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>是因为query是this.$route.query，相当于对象的浅拷贝，所以虽然在query里改变key-value，但query的地址并没有改变；</p> <div class="tip custom-block"><p class="custom-block-title">解决方法</p> <p>这时只需要将 <code>query</code> 进行深拷贝赋值即可</p></div> <p><a href="https://blog.csdn.net/lbPro0412/article/details/81874991" target="_blank" rel="noopener noreferrer">vue-router参数query改变页面url不改变及不更新数据<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="vue-keep-alive-刷新数据"><a href="#vue-keep-alive-刷新数据" aria-hidden="true" class="header-anchor">#</a> vue keep-alive 刷新数据</h3> <p>可以在 <code>beforeRouteEnter</code> 中做请求，这样进入页面</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>beforeRouteEnter(to, form, next) {
+  next(vm =&gt; {
+    this.fetchData()
+  })
+}
+
+beforeRouteLeave(to, from, next) {
+  next(vm =&gt; {
+    this.fetchData()
+  })
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="vue-新页面打开"><a href="#vue-新页面打开" aria-hidden="true" class="header-anchor">#</a> vue 新页面打开</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>let obj = {
+  usersId: rowUserId,
+  userPhone: rowMobile,
+  accountType: rowAccountType,
+  userOpenId: rowOpenId,
+  appealId: rowId
+}
+let routeData = this.$router.resolve({name: 'changeClassUserInfo', query: obj})
+window.open(routeData.href, '_blank')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="vue-router-点击同一个页面，异常处理"><a href="#vue-router-点击同一个页面，异常处理" aria-hidden="true" class="header-anchor">#</a> vue-router 点击同一个页面，异常处理</h3> <p>使用面包屑导航，点击同一个面包屑控制台会报错</p> <p>解决： 在vue-router 添加</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const originalPush = Router.prototype.push
+Router.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err =&gt; err)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><a href="https://www.cnblogs.com/ziyue7575/p/11662889.html" target="_blank" rel="noopener noreferrer">相关链接:<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="当前dom-滚动到视图区域"><a href="#当前dom-滚动到视图区域" aria-hidden="true" class="header-anchor">#</a> 当前dom 滚动到视图区域</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>scrollIntoView
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><div class="valine-container" data-v-1aaa9290><section style="border-top: 2px solid #eaecef;padding-top:1rem;margin-top:2rem;" data-v-1aaa9290><div data-v-1aaa9290><span data-flag-title="Your Article Title" class="leancloud-visitors" data-v-1aaa9290><em class="post-meta-item-text" data-v-1aaa9290>阅读量： </em> <i class="leancloud-visitors-count" data-v-1aaa9290></i></span></div> <h3 data-v-1aaa9290><a href="javascript:;" data-v-1aaa9290></a>
+      评 论：
+    </h3> <div id="vcomments" data-v-1aaa9290></div></section></div></div> <div class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">9/2/2020, 11:21:30 AM</span></div></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.d56d54d5.js" defer></script><script src="/assets/js/23.ed906f1e.js" defer></script><script src="/assets/js/5.e5b20c49.js" defer></script>
+  </body>
+</html>
